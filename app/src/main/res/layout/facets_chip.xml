@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:text="Hello World"
+    app:closeIcon="@drawable/tiny_close"
+    app:closeIconEnabled="true"
+    app:closeIconVisible="true"
+    style="@style/search_facet_style"
+    android:layout_marginStart="@dimen/app_global_side_padding"
+    android:textAppearance="@style/search_facet_text_style"
+    app:chipCornerRadius="4dp"
+    app:chipBackgroundColor="@color/white"
+    app:chipStrokeColor="@color/form_border_grey"
+    app:chipStrokeWidth="1dp"
+    />
