@@ -1,4 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="default_padding">16dp</dimen>
+    <dimen name="smallHeaderImgSize">85dp</dimen>
+    <dimen name="tinyHeaderImgSize">65dp</dimen>
+    <dimen name="bookingHeaderImgSize">48dp</dimen>
+    <dimen name="profileHeaderImgSize">120dp</dimen>
+    <dimen name="large_space">12dp</dimen>
+    <dimen name="small_button_text_size">13sp</dimen>
+    <dimen name="max_search_form_width">430dp</dimen>
+    <dimen name="max_button_width">350dp</dimen>
+    <dimen name="max_list_width">365dp</dimen>
+    <dimen name="list_item_frame_padding">8dp</dimen>
+    <dimen name="doctor_header_padding">13dp</dimen>
+    <dimen name="appt_last_item_btm_padding">26dp</dimen>
+    <dimen name="appt_list_divider">1dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="close_button_size">52dp</dimen>
+
+    <dimen name="times_grid_height">75dp</dimen>
+    <dimen name="times_grid_button_height">45dp</dimen>
+    <dimen name="ratingbar_mid_height">30dp</dimen>
+
+    <dimen name="app_global_side_half_half_half_padding">2dp</dimen>
+    <dimen name="app_global_side_half_half_padding">4dp</dimen>
+    <dimen name="app_global_side_half_padding">8dp</dimen>
+    <dimen name="app_global_side_padding">16dp</dimen>
+    <dimen name="app_global_side_padding_1_dot_5x">24dp</dimen>
+    <dimen name="app_global_side_padding_2x">32dp</dimen>
+    <dimen name="app_global_side_padding_3x">48dp</dimen>
+    <dimen name="app_global_side_padding_4x">64dp</dimen>
+    <dimen name="app_global_side_padding_6x">96dp</dimen>
+
+    <dimen name="app_global_border_size">1dp</dimen>
+
+    <dimen name="app_default_elevation">5dp</dimen>
+
+    <dimen name="app_default_field_height">56dp</dimen>
+    <dimen name="app_default_field_button_width">64dp</dimen>
+    <dimen name="app_medium_field_height">48dp</dimen>
+
+    <dimen name="app_default_section_header_height">30dp</dimen>
+    <dimen name="app_default_list_header_height">40dp</dimen>
+    <dimen name="app_map_height">150dp</dimen>
+    <dimen name="app_map_info_window_width">290dp</dimen>
+
+    <dimen name="filter_label_margin">32dp</dimen>
+    <dimen name="filter_form_group_bottom_padding">40dp</dimen>
+    <dimen name="filter_equal_width">0dp</dimen>
+    <dimen name="filter_gender_button_margin">-1dp</dimen>
+    <dimen name="filter_no_margin">0dp</dimen>
+    <dimen name="filter_divider_margin">20dp</dimen>
+    <dimen name="filter_language_button_margin">12dp</dimen>
+
+    <dimen name="form_field_height">48dp</dimen>
+    <dimen name="form_button_height">56dp</dimen>
+    <dimen name="small_button_height">38dp</dimen>
+
+    <dimen name="h2_text_size">18sp</dimen>
+    <dimen name="h1_text_size">20sp</dimen>
+    <dimen name="title_text_size">24sp</dimen>
+    <dimen name="headline_text_size">44sp</dimen>
+    <dimen name="subhead_text_size">30sp</dimen>
+
+    <dimen name="arrow_icon_button_width">43dp</dimen>
+    <dimen name="icon_button_padding">12dp</dimen>
+    <dimen name="doc_image_with_padding_width">93dp</dimen>
+    <dimen name="corner_radius">20dp</dimen>
+    <dimen name="chip_corner_radius">4dp</dimen>
+
+    <dimen name="label_corner_radius">2dp</dimen>
+
+    <dimen name="insurance_card_image_width">96dp</dimen>
+    <dimen name="insurance_card_image_height">60.3dp</dimen>
+
+    <dimen name="app_toolbar_height">56dp</dimen>
+    <dimen name="app_toolbar_button_height">48dp</dimen>
+    <dimen name="toolbar_height_plus_side_padding">72dp</dimen>
+
+    <dimen name="search_form_group_height">64dp</dimen>
+    <dimen name="search_form_group_height_mini">36dp</dimen>
+
+    <dimen name="pps_text_item_height">40dp</dimen>
+
+    <dimen name="provider_availability_indicator_size">20dp</dimen>
+
+    <dimen name="verification_animation_size">80dp</dimen>
+    <dimen name="multi_location_view_pager_height">330dp</dimen>
+    <dimen name="multi_location_view_pager_height_without_time_grid">198dp</dimen>
+    <dimen name="small_date_picker_height">35dp</dimen>
+    <dimen name="lottie_loading_width">170dp</dimen>
+    <dimen name="lottie_loading_height">176dp</dimen>
+    <dimen name="bottom_footer_elevation">16dp</dimen>
+    <dimen name="guideline_image_size">62dp</dimen>
+    <dimen name="special_button_app_padding">14sp</dimen>
+
+    <dimen name="sign_in_button_height">56dp</dimen>
+
+    <dimen name="button_left_icon_size">24dp</dimen>
+    <dimen name="facebook_icon_size">32dp</dimen>
+
+    <dimen name="button_left_icon_padding_facebook">12dp</dimen>
+    <dimen name="in_network_banner_height">60dp</dimen>
+    <dimen name="empty_state_view_icon_height">145dp</dimen>
+    <dimen name="hm_logo_height_large">33dp</dimen>
+    <dimen name="hm_logo_height_small">22dp</dimen>
+    <dimen name="nyp_logo_height_large">28dp</dimen>
+    <dimen name="nyp_logo_height_small">18dp</dimen>
+    <dimen name="nearby_doctor_carousel_width">220dp</dimen>
+    <dimen name="doctor_profile_detail_image_width">175dp</dimen>
+    <item name="line_multiplier" format="float" type="dimen">1.25</item>
+
+    <!-- NEW 2019 Summer style text sizes
+    https://app.goabstract.com/projects/ce9a7f50-3c2c-11e9-b85a-2be15d5a67a7/branches/master/commits/021f5d553164e07c8b93a9f560c74482303217cc/files/B4FC6D2D-7505-44D7-BB37-7EE55D7E168E/layers/D95145DF-EC40-4EA6-8DF6-7E20732CC3A5?mode=design-->
+    <dimen name="card_header_text_size">16sp</dimen>
+    <dimen name="card_subheader_text_size">14sp</dimen>
+    <dimen name="card_additional_info_text_size">13sp</dimen>
+    <dimen name="whisper_label_small_text_size">13sp</dimen>
+
+
 </resources>
