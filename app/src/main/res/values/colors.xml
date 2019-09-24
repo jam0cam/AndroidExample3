@@ -81,4 +81,6 @@
     <color name="light_divider_color">#f6f6f6</color>
     <color name="insurance_callout_bg">#edeef0</color>
 
+    <color name="facet_border_grey">#a1aebc</color>
+    <color name="facet_selected_grey">#e5e9ec</color>
 </resources>

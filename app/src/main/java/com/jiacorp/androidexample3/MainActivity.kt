@@ -46,13 +46,22 @@ class MainActivity : AppCompatActivity() {
 
         insuranceChip.layoutParams = getChipLayoutParams(sidePadding)
         filterChip.layoutParams = getChipLayoutParams(sideHalfPadding)
+
+
+        insuranceChip.setOnClickListener {
+            chipClicked(insuranceChip)
+        }
     }
 
     private fun checkFbLoginStatus() {
         val accessToken = AccessToken.getCurrentAccessToken()
         val isLoggedIn = accessToken != null && !accessToken.isExpired
         Log.e(TAG, "FB user loggedin = $isLoggedIn")
+    }
 
+    fun chipClicked(chip: Chip) {
+        Log.e("JIA", "chip clicked")
+        chip.isSelected = !chip.isSelected
     }
 
     fun getChipLayoutParams(leftMar: Int) = LayoutParams(LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT).apply {

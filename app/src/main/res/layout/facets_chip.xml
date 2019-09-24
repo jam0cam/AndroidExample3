@@ -12,7 +12,7 @@
     android:layout_marginStart="@dimen/app_global_side_padding"
     android:textAppearance="@style/search_facet_text_style"
     app:chipCornerRadius="4dp"
-    app:chipBackgroundColor="@color/white"
-    app:chipStrokeColor="@color/form_border_grey"
+    app:chipBackgroundColor="@color/chip_bg_color"
+    app:chipStrokeColor="@color/facet_border_grey"
     app:chipStrokeWidth="1dp"
     />
