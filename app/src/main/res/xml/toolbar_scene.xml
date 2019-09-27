@@ -6,11 +6,22 @@
         app:constraintSetStart="@+id/start"
         app:constraintSetEnd="@+id/end"
         app:motionInterpolator="@android:anim/accelerate_decelerate_interpolator"
-        app:duration="150"
-        >
+        app:duration="2000">
+        <KeyFrameSet>
+
+            <KeyPosition
+                app:keyPositionType="pathRelative"
+                app:percentX="1"
+                app:percentWidth="0"
+                app:framePosition="50"
+                app:motionTarget="@+id/expanded_layout"
+                app:pathMotionArc="none"
+                />
+        </KeyFrameSet>
     </Transition>
 
-    <ConstraintSet android:id="@+id/start">
+    <ConstraintSet android:id="@+id/start"
+        >
         <Constraint
             android:id="@+id/collapsed_layout"
             android:layout_width="0dp"
@@ -18,12 +29,11 @@
             android:padding="@dimen/app_global_side_half_half_padding"
             android:background="@color/white"
             android:clickable="true"
-            android:alpha="1"
+            android:alpha="0"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toRightOf="@id/sr_back"
             app:layout_constraintRight_toLeftOf="@+id/sr_sort"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Constraint
             android:id="@+id/expanded_layout"
@@ -32,12 +42,11 @@
             android:orientation="vertical"
             android:padding="@dimen/app_global_side_half_half_padding"
             android:background="@color/yellow"
-            android:alpha="0"
+            android:alpha="1"
             app:layout_constraintBottom_toBottomOf="@id/collapsed_layout"
             app:layout_constraintLeft_toLeftOf="@id/collapsed_layout"
             app:layout_constraintRight_toRightOf="@id/collapsed_layout"
-            app:layout_constraintTop_toTopOf="@id/collapsed_layout"
-            />
+            app:layout_constraintTop_toTopOf="@id/collapsed_layout" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
@@ -52,8 +61,7 @@
             android:alpha="0"
             app:layout_constraintTop_toBottomOf="@id/sr_back"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            />
+            app:layout_constraintRight_toRightOf="parent" />
 
         <Constraint
             android:id="@+id/expanded_layout"
@@ -65,8 +73,7 @@
             android:alpha="1"
             app:layout_constraintTop_toBottomOf="@id/sr_back"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            />
+            app:layout_constraintRight_toRightOf="parent" />
 
     </ConstraintSet>
 

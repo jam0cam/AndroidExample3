@@ -3,6 +3,8 @@ package com.jiacorp.androidexample3
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.motion.widget.MotionLayout
+import androidx.constraintlayout.motion.widget.MotionScene
 import kotlinx.android.synthetic.main.activity_morphing_toolbar.*
 
 class MorphingToolbarActivity : AppCompatActivity() {

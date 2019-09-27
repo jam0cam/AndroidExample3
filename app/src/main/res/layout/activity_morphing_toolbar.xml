@@ -17,6 +17,7 @@
         android:paddingBottom="@dimen/app_global_side_padding"
         android:background="@color/yellow"
         app:layoutDescription="@xml/toolbar_scene"
+        app:motionDebug="SHOW_PATH"
         >
 
         <ImageButton
