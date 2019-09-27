@@ -30,4 +30,27 @@
         <item name="android:textColor">@color/navy</item>
         <item name="android:background">@color/yellow</item>
     </style>
+
+    <style name="search_form_group">
+        <item name="android:clickable">true</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_height">@dimen/search_form_group_height</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:paddingLeft">@dimen/app_global_side_padding</item>
+        <item name="android:paddingRight">@dimen/app_global_side_padding</item>
+    </style>
+
+    <style name="search_form_value">
+        <item name="android:textColor">@color/navy</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:minLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColorHint">@color/navy</item>
+        <item name="android:layout_marginBottom">@dimen/app_global_side_half_padding</item>
+        <item name="android:layout_marginTop">@dimen/app_global_side_half_half_padding</item>
+    </style>
+
 </resources>

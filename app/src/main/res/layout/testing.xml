@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_container"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:clickable="true"
-    >
-    <androidx.constraintlayout.motion.widget.MotionLayout
-        android:id="@+id/motion_layout"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/app_global_side_padding"
         android:paddingBottom="@dimen/app_global_side_padding"
-        android:background="@color/yellow"
-        app:layoutDescription="@xml/toolbar_scene"
-        >
+        android:background="@color/yellow">
 
         <ImageButton
             android:id="@+id/sr_back"
@@ -60,12 +54,11 @@
             android:padding="@dimen/app_global_side_half_half_padding"
             android:background="@color/white"
             android:clickable="true"
-            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toRightOf="@id/sr_back"
             app:layout_constraintRight_toLeftOf="@+id/sr_sort"
             app:layout_constraintTop_toTopOf="parent"
-            >
+            android:visibility="gone">
 
             <ImageView
                 android:id="@+id/csh_icon"
@@ -106,19 +99,17 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/expanded_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:orientation="vertical"
             android:padding="@dimen/app_global_side_half_half_padding"
             android:background="@color/yellow"
             app:layout_constraintTop_toBottomOf="@id/sr_back"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            android:visibility="gone"
-            >
+            app:layout_constraintRight_toRightOf="parent">
 
             <com.jiacorp.androidexample3.SearchFieldView
                 android:id="@+id/sf_specialty"
@@ -159,28 +150,10 @@
                 android:paddingLeft="@dimen/app_global_side_half_padding"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/sf_location" />
-
-            <TextView
-                android:id="@+id/sf_close"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="close"
-                android:clickable="true"
-                style="@style/SmallText.Bold"
-                android:foreground="?selectableItemBackground"
-                android:paddingLeft="@dimen/app_global_side_half_padding"
-                android:paddingTop="@dimen/app_global_side_half_padding"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/sf_insurance" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.constraintlayout.motion.widget.MotionLayout>
 
-    <Button
-        android:id="@+id/start_animation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Start Animation"
-        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </LinearLayout>
