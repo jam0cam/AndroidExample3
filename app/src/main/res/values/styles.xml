@@ -15,7 +15,19 @@
     <style name="search_facet_text_style" parent="TextAppearance.MaterialComponents.Chip">
         <item name="android:textSize">13sp</item>
         <item name="android:fontFamily">sans-serif-black</item>
-
     </style>
 
+    <style name="SmallText">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="SmallText.Bold">
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MainButton" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textColor">@color/navy</item>
+        <item name="android:background">@color/yellow</item>
+    </style>
 </resources>

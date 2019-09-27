@@ -17,18 +17,12 @@
         android:text="SSO"
         android:textSize="20sp"
         />
+    <Button
+        android:id="@+id/main_morphing_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Morphing Toolbar"
+        android:textSize="20sp"
+        />
 		
-	    <LinearLayout
-	        android:id="@+id/linear_layout"
-	        android:layout_width="match_parent"
-	        android:layout_height="56dp"
-	        android:orientation="horizontal"
-	        app:layout_constraintTop_toTopOf="parent"
-	        app:layout_constraintLeft_toLeftOf="parent"
-	        android:background="@color/white"
-	        android:gravity="center_vertical"
-	        android:paddingTop="@dimen/app_global_side_half_half_padding"
-	        android:paddingBottom="@dimen/app_global_side_half_half_padding"
-	        />
-
 </LinearLayout>

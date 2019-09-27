@@ -13,12 +13,6 @@ import com.facebook.AccessToken
 import com.google.android.material.chip.Chip
 
 class MainActivity : AppCompatActivity() {
-
-    lateinit var insuranceChip: Chip
-    lateinit var filterChip: Chip
-    var sidePadding = 0
-    var sideHalfPadding = 0
-
     companion object {
         val TAG = "MainActivity"
     }
@@ -28,43 +22,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         main_sso.setOnClickListener { startActivity(Intent(this, SsoActivity::class.java))  }
-
-
-        checkFbLoginStatus()
-
-        insuranceChip = View.inflate(this, R.layout.facets_chip, null) as Chip
-        filterChip = View.inflate(this, R.layout.facets_chip, null) as Chip
-
-        sidePadding = resources.getDimensionPixelSize(R.dimen.app_global_side_padding)
-        sideHalfPadding = resources.getDimensionPixelSize(R.dimen.app_global_side_half_half_padding)
-
-        linear_layout.addView(insuranceChip)
-        linear_layout.addView(filterChip)
-
-        insuranceChip.text = "Cigna: Open Access Plan"
-        filterChip.text = "more filters(2)"
-
-        insuranceChip.layoutParams = getChipLayoutParams(sidePadding)
-        filterChip.layoutParams = getChipLayoutParams(sideHalfPadding)
-
-
-        insuranceChip.setOnClickListener {
-            chipClicked(insuranceChip)
-        }
+        main_morphing_toolbar.setOnClickListener { startActivity(Intent(this, MorphingToolbarActivity::class.java))  }
     }
 
-    private fun checkFbLoginStatus() {
-        val accessToken = AccessToken.getCurrentAccessToken()
-        val isLoggedIn = accessToken != null && !accessToken.isExpired
-        Log.e(TAG, "FB user loggedin = $isLoggedIn")
-    }
-
-    fun chipClicked(chip: Chip) {
-        Log.e("JIA", "chip clicked")
-        chip.isSelected = !chip.isSelected
-    }
-
-    fun getChipLayoutParams(leftMar: Int) = LayoutParams(LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT).apply {
-        setMargins(leftMar, 0, 0, 0)
-    }
 }
