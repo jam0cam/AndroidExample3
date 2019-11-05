@@ -12,11 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="com.jiacorp.androidexample3.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name="com.jiacorp.androidexample3.SsoActivity" />
 
@@ -39,6 +35,12 @@
         </activity>
         <activity android:name=".DeepLinkActivity" />
         <activity android:name=".MorphingToolbarActivity" />
+        <activity android:name=".ProgressActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
 
     </application>

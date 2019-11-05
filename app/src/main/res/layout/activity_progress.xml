@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/app_global_side_padding"
+    >
+
+    <Button
+        android:id="@+id/prog_animate_intervals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Animate Intervals"
+        />
+
+    <Button
+        android:id="@+id/prog_animate_once"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Animate Once"
+        />
+
+    <Button
+        android:id="@+id/prog_animate_once_change_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Animate Once While changing Color"
+        />
+
+    <ProgressBar
+        android:id="@+id/prog_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        style="?android:progressBarStyleHorizontal"
+        android:layout_marginTop="100dp"
+        android:max="100"
+        android:progress="75"
+        />
+
+</LinearLayout>
