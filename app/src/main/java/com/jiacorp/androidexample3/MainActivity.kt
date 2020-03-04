@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         main_sso.setOnClickListener { startActivity(Intent(this, SsoActivity::class.java))  }
         main_morphing_toolbar.setOnClickListener { startActivity(Intent(this, MorphingToolbarActivity::class.java))  }
         main_progress.setOnClickListener { startActivity(Intent(this, ProgressActivity::class.java))  }
+        main_network.setOnClickListener  { startActivity(Intent(this,  NetworkActivity::class.java))  }
     }
 
 }
