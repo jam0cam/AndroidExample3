@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "639545636185",
+    "firebase_url": "https://androidexample3-fab04.firebaseio.com",
+    "project_id": "androidexample3-fab04",
+    "storage_bucket": "androidexample3-fab04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639545636185:android:d4e991b76ed758e1374848",
+        "android_client_info": {
+          "package_name": "com.jiacorp.androidexample3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639545636185-3to045e9e79m5skkb9mak3jnpepl1aum.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8t1ZBJqFnYvlseplfvGJzutMtFvHEeew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639545636185-3to045e9e79m5skkb9mak3jnpepl1aum.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

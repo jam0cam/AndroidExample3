@@ -13,7 +13,7 @@ class NetworkActivity : AppCompatActivity(){
         setContentView(R.layout.activity_network)
 
         btn_provider.setOnClickListener { presenter.providerCall() }
-        btn_provider.setOnClickListener { presenter.reviewsCall() }
+        btn_flags.setOnClickListener { presenter.reviewsCall() }
     }
 }
 
